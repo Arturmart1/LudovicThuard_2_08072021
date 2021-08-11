@@ -308,14 +308,14 @@ aside {
     0 100px 80px rgba(0, 0, 0, 0.07);
 }
 .sidecard img {
-  width: 9rem;
+  width: 6.5rem;
   height: 10rem;
+  margin-right: 2em;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   object-fit: cover;
 }
 .sidecard-text {
-  margin-left: 1.3em;
   padding-top: 0.8em;
 }
 .sidecard-text h4 {
@@ -328,6 +328,91 @@ aside {
 .sidecard:hover {
   cursor: pointer;
   animation: jelly 0.5s;
+}
+.activites{
+  padding: 0px 32px;
+  margin: 4rem 0;
+  background-size: cover;
+  background-position: center;
+}
+#bloc-activite{
+  display: flex;
+  justify-content: space-between;
+  border-radius:1.25rem 0 0 1.25rem;
+}
+.Titre-Activites {
+  margin-bottom: 3rem;
+  margin-top: 4rem ;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.activites-cartes h3{
+  font-size: 1.2em; ;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.activites-cartes {
+  width:23%;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  0 100px 80px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.activites-cartes1 {
+  height: 200%;
+  width: auto;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  0 100px 80px rgba(0, 0, 0, 0.07);
+  border-radius: 15px 15px 15px 15px;
+}
+.activites-cartes1 img {
+  height: 360px;
+  width: 100%;
+  object-fit: cover;
+  border-style: none;
+}
+.activites-cartes2{
+  height: 220px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  0 100px 80px rgba(0, 0, 0, 0.07);
+}
+.activites-cartes2 img {
+  height: 180px; 
+  width: 100%;
+  object-fit: cover;
+  border-style: none;
+}
+.invert{
+  margin-bottom: 1.5rem;
+}
+.activites-cartes3{
+  height: 185px;
+  width: 100%;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  0 100px 80px rgba(0, 0, 0, 0.07);
+}
+.activites-cartes3 img {
+  height: 110px; 
+  width: 100%;
+  object-fit: cover;
+  border-style: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 footer {
   display: flex;
