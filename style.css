@@ -140,6 +140,9 @@ button:hover {
   height: 1.1rem;
   padding: 0.8em 0.8em 0.8em 0.8em;
 }
+.fa-search{
+  color: white;
+}
 .filters_menu {
   margin-bottom: 20px;
   display: flex;
@@ -329,90 +332,75 @@ aside {
   cursor: pointer;
   animation: jelly 0.5s;
 }
-.activites{
-  padding: 0px 32px;
-  margin: 4rem 0;
-  background-size: cover;
-  background-position: center;
-}
-#bloc-activite{
+#bloc-activites{
   display: flex;
   justify-content: space-between;
-  border-radius:1.25rem 0 0 1.25rem;
+  padding-bottom: 4rem;
 }
-.Titre-Activites {
+.activity-title {
   margin-bottom: 3rem;
   margin-top: 4rem ;
   font-size: 1.2em;
   font-weight: 600;
 }
-.activites-cartes h3{
+.activity-cards h3{
   font-size: 1.2em; ;
   margin-left: 1rem;
   margin-top: 1rem;
   font-weight: bold;
 }
-.activites-cartes {
+.activity-cards {
   width:23%;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  0 100px 80px rgba(0, 0, 0, 0.07);
+  height: 430px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;  
 }
-.activites-cartes1 {
+.activity-cards-large {
   height: 200%;
   width: auto;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  0 100px 80px rgba(0, 0, 0, 0.07);
   border-radius: 15px 15px 15px 15px;
 }
-.activites-cartes1 img {
+.activity-cards-large img {
   height: 360px;
   width: 100%;
   object-fit: cover;
   border-style: none;
+  border-radius: 15px 15px 15px 15px;
 }
-.activites-cartes2{
+.activity-cards-medium{
   height: 220px;
   width: 100%;
-  margin-bottom: 1.5rem;
   border-radius: 15px 15px 15px 15px;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  0 100px 80px rgba(0, 0, 0, 0.07);
 }
-.activites-cartes2 img {
+.activity-cards-medium img {
   height: 180px; 
   width: 100%;
   object-fit: cover;
   border-style: none;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
-.invert{
-  margin-bottom: 1.5rem;
-}
-.activites-cartes3{
+.activity-cards-small{
   height: 185px;
   width: 100%;
   border-radius: 15px 15px 15px 15px;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.042), 0 41.8px 33.4px rgba(0, 0, 0, 0.05),
-  0 100px 80px rgba(0, 0, 0, 0.07);
+
 }
-.activites-cartes3 img {
+.activity-cards-small img {
   height: 110px; 
   width: 100%;
   object-fit: cover;
   border-style: none;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+.activity-cards-small:hover,
+.activity-cards-medium:hover,
+.activity-cards-large:hover {
+  cursor: pointer;
+  animation: jelly 0.5s;
 }
 footer {
   display: flex;
@@ -430,3 +418,39 @@ footer h4 {
   padding-right: 3rem;
   line-height: 2em;
 }
+/*RESPONSIVE SMARTPHONES*/
+@media only screen and (max-width: 600px){
+  h1{
+      font-size: 1.5rem;
+      font-weight: 800;
+  }
+  .filters_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  button{
+    display: none;
+  }
+  .fa-search{
+    color: white;
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    background-color: #0065fc;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .main_page{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+  }
+  .container{
+    width: 100%;
+  }
+  .actvites{
+    display: flex;
+    flex-direction: column;
+  }
