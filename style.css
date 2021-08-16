@@ -26,9 +26,16 @@ body {
   margin: auto;
   font-family: "Raleway", sans-serif;
 }
+header{
+  width: 95%;
+  margin: auto;
+}
 h1 {
   font-size: 1.5em;
   font-weight: 700;
+}
+a{
+  text-decoration: unset;
 }
 .logo{
   margin-right: auto;
@@ -150,7 +157,7 @@ button:hover {
   align-items: center;
 }
 .filters_title {
-  margin-right: 20px;
+  margin-bottom: 1em;
   font-weight: 600;
 }
 .filters {
@@ -161,6 +168,7 @@ button:hover {
   border: 2px solid #f2f2f2;
   border-radius: 25px 25px 25px 25px;
 }
+
 .filters:hover {
   cursor: pointer;
   animation: jelly 0.5s;
@@ -201,9 +209,11 @@ button:hover {
 .main_page {
   display: flex;
   justify-content: space-between;
+  width: 95%;
+  margin: auto;
 }
 .container {
-  max-width: 60%;
+  max-width: 62%;
   max-height: fit-content;
   background-color: #f2f2f2;
   border-top-right-radius: 15px;
@@ -272,11 +282,12 @@ strong {
   margin-bottom: -20px;
   object-fit: cover;
 }
-.end_main a{
+.end_main h3{
   font-weight: 700;
   font-size: 1.2em;
+  margin-top: auto;
+  margin-bottom: 2.5em;
   color: black;
-  text-decoration: unset;
 }
 aside {
   background-color: #f2f2f2;
@@ -287,8 +298,11 @@ aside {
   padding-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 10px;
   margin-top: 20px;
-  width: 28%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
 }
 .side-title {
   display: flex;
@@ -301,7 +315,7 @@ aside {
 .sidecard {
   background-color: white;
   display: flex;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 1em;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -321,24 +335,31 @@ aside {
 }
 .sidecard-text {
   padding-top: 0.8em;
+  padding-right: 0.5em;
 }
 .sidecard-text h4 {
   font-weight: 700;
   font-size: 1.2em;
 }
 .side-stars {
-  padding-top: 4em;
+  margin-top: auto;
 }
 .sidecard:hover {
   cursor: pointer;
   animation: jelly 0.5s;
 }
-#bloc-activites {
+.activites{
+  display: flex;
+  flex-direction: column;
+}
+.bloc-activites {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 4rem;
+  width: 95%;
+  margin: auto;
 }
 .activity-title {
+  padding-left: 2em;
   margin-bottom: 3rem;
   margin-top: 4rem;
   font-size: 1.2em;
@@ -411,20 +432,29 @@ aside {
   animation: jelly 0.5s;
 }
 footer {
+  margin-top: 4em;
   display: flex;
   justify-content: flex-start;
   background-color: #f2f2f2;
   height: 10rem;
 }
 footer h4 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.2em;
   padding-top: 1em;
   padding-bottom: 0.8em;
 }
+footer a{
+  text-decoration: unset;
+  color: black;
+}
 .foot {
-  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 50%;
   line-height: 2em;
+  margin-top: 1em;
+  margin-left: 3em;
 }
 /*RESPONSIVE SMARTPHONES*/
 @media only screen and (max-width: 600px) {
@@ -435,11 +465,23 @@ footer h4 {
   nav{
     order: 1;
     flex: 1 100%;
+    padding-bottom: 0.6em;
+    border-bottom: 3px solid #f2f2f2;
+  }
+  nav a:hover{
+    border-bottom-color: #0065fc;
+  }
+  .signin{
+    margin-bottom: 1em;
   }
   .filters_menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
+  }
+  .filters{
+    margin-bottom: 0.5em;
   }
   button {
     display: none;
@@ -451,19 +493,94 @@ footer h4 {
     padding-right: 0.5em;
     padding-left: 0.5em;
     background-color: #0065fc;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px 15px 15px 15px;
   }
   .main_page {
     display: flex;
-    flex-direction: column;
-    width: max-content;
+    flex-direction: column-reverse;
+    margin: auto;
   }
-  .container {
+  aside{
+    width: 90%;
+    height: max-content;
+    border-radius: unset;
+  }
+  .side-title{
+    display: flex;
+    justify-content: space-between;
+  }
+  .side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
   }
-  .actvites {
+  .sidecard{
+    max-width: 100%;
+    height: 9rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .sidecard-img{
+    flex: 1 60%;
+    padding: 0.2em;
+    object-fit: cover;
+  }
+  .sidecard-text{
+    flex: 1 50%;
+  }
+  .sidecard-text h4{
+    font-size: 1em;
+  }
+  .sidecard-text p{
+    font-size: 0.8em;
+  }
+  .stars{
+    margin-top: auto;
+  }
+  .container{
+    background-color: unset;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: baseline;
+  }
+  .card{
+    flex: 1 100%;
+  }
+  .card_img{
+    object-fit: cover;
+  }
+  .main_title{
+    font-size: 1em;
+    font-weight: 600;
+    padding-left: 0.5em;
+    order: -1;
+  }
+  #bloc-activites{
+    display: flex;
+    flex-direction: column;
+  }
+  .activites{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .activity-cards{
+    width: 90%;
+    height: 10%;
+    margin: auto;
+  }
+  .activity-cards-large{
+    object-fit: cover;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
   }
 }
