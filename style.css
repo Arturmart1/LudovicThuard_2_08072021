@@ -1,3 +1,4 @@
+/* Version DESKTOP */
 @font-face {
   font-family: "Raleway";
   src: url("static/Raleway-Regular.ttf");
@@ -419,7 +420,9 @@ footer a {
   margin-top: 1em;
   margin-left: 3em;
 }
+
 /*RESPONSIVE TABLETTE*/
+
 @media only screen and (max-width: 1024px) {
   h1 {
     font-size: 1.5rem;
@@ -492,7 +495,9 @@ footer a {
     flex-direction: column;
   }
 }
+
 /*RESPONSIVE SMARTPHONES*/
+
 @media only screen and (max-width: 600px) {
   h1 {
     font-size: 1.5rem;
@@ -660,3 +665,4 @@ footer a {
     height: fit-content;
   }
 }
+/*Réalisation: Ludovic THUARD pour OpenClassrooms*/
