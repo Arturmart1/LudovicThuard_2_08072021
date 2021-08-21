@@ -464,6 +464,9 @@ footer a {
     width: 12.5rem;
     height: 28rem;
   }
+  .activity-cards-small img{
+    object-position: unset;
+  }
   footer {
     display: flex;
     height: max-content;
@@ -551,7 +554,7 @@ footer a {
 
 /*RESPONSIVE SMARTPHONES*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   h1 {
     font-size: 1.5rem;
     font-weight: 800;
@@ -681,6 +684,9 @@ footer a {
     margin-right: auto;
     padding-left: 0.5em;
   }
+  .activites{
+    margin-top: 1.5em;
+  }
   .activity-title{
     margin-right: auto;
     padding-left: 0.5em;
@@ -703,12 +709,18 @@ footer a {
   }
   .activity-cards-large, .activity-cards-medium, .activity-cards-small{
     margin-bottom: 2em;
+    width: 100%;
+    height: unset;
   }
   .photos-activites {
     object-fit: cover;
     height: 4.5rem;
     max-height: 4.5rem;
     min-height: 4.5rem;
+  }
+  .activity-cards-large img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
   footer {
     display: flex;
