@@ -110,12 +110,13 @@ button:hover {
 .search_input {
   height: 3rem;
   width: 15em;
+  padding-left: 1.2em;
   border: 1px solid #f2f2f2;
 }
 .search_input::placeholder {
   opacity: 1;
   color: black;
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: 700;
   font-family: "raleway";
 }
@@ -136,7 +137,13 @@ button:hover {
 }
 .filters_title {
   margin-bottom: 1em;
+  margin-right: 1.5em;
   font-weight: 600;
+}
+.filters_container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .filters {
   display: flex;
@@ -144,7 +151,8 @@ button:hover {
   margin-right: 20px;
   padding-right: 20px;
   border: 2px solid #f2f2f2;
-  border-radius: 25px 25px 25px 25px;
+  border-radius: 1.6rem;
+  font-weight: 600;
 }
 .fa-stack {
   vertical-align: middle;
@@ -203,7 +211,7 @@ section {
   font-size: 1.4em;
   font-weight: 600;
   margin-top: 0.2em;
-  
+
   padding-bottom: 20px;
   font-weight: 700;
 }
@@ -251,8 +259,8 @@ strong {
   margin-bottom: -20px;
   object-fit: cover;
 }
-.end_main{
-  margin-top: 1em; 
+.end_main {
+  margin-top: 1em;
   font-weight: 700;
   font-size: 1.2em;
   color: black;
@@ -435,7 +443,7 @@ footer a {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-  .end_main{
+  .end_main {
     margin-bottom: 0.6em;
   }
   .card {
@@ -453,18 +461,18 @@ footer a {
     display: flex;
     justify-content: space-between;
   }
-  .bloc-activites{
+  .bloc-activites {
     width: 90%;
     margin: auto;
   }
-  .activity-title{
+  .activity-title {
     margin: 1.5em 0 1.5em 0;
   }
-  .activity-cards-large{
+  .activity-cards-large {
     width: 12.5rem;
     height: 28rem;
   }
-  .activity-cards-small img{
+  .activity-cards-small img {
     object-position: unset;
   }
   footer {
@@ -584,6 +592,9 @@ footer a {
   .filters {
     margin-bottom: 0.5em;
   }
+  .search_input {
+    width: 90%;
+  }
   button {
     display: none;
   }
@@ -649,25 +660,25 @@ footer a {
     padding: unset;
     margin: unset;
   }
-  .main_title{
+  .main_title {
     font-size: 2em;
     margin-top: 1.5em;
     margin-right: auto;
   }
-  .main a{
+  .main a {
     width: 100%;
     max-width: 100%;
     min-width: 100%;
   }
-  .main{
+  .main {
     padding: unset;
   }
-  .card{
+  .card {
     width: 100%;
     max-width: 100%;
     min-width: 100%;
   }
-  .card_img{
+  .card_img {
     min-width: 97%;
     margin: auto;
     padding: unset;
@@ -684,15 +695,15 @@ footer a {
     margin-right: auto;
     padding-left: 0.5em;
   }
-  .activites{
+  .activites {
     margin-top: 1.5em;
   }
-  .activity-title{
+  .activity-title {
     margin-right: auto;
     padding-left: 0.5em;
     margin-bottom: 1em;
   }
-  .bloc-activites{
+  .bloc-activites {
     display: flex;
     flex-direction: column;
     margin-top: 1em;
@@ -707,7 +718,9 @@ footer a {
     min-width: 100%;
     height: unset;
   }
-  .activity-cards-large, .activity-cards-medium, .activity-cards-small{
+  .activity-cards-large,
+  .activity-cards-medium,
+  .activity-cards-small {
     margin-bottom: 2em;
     width: 100%;
     height: unset;
