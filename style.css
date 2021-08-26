@@ -97,11 +97,11 @@ button {
   color: white;
   background-color: #0065fc;
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: "raleway";
   border: unset;
   height: 3rem;
-  width: 9rem;
+  width: 7.5rem;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
@@ -110,7 +110,7 @@ button:hover {
 }
 .search_input {
   height: 3rem;
-  width: 15em;
+  width: 14em;
   padding-left: 1.2em;
   border: 1px solid #f2f2f2;
 }
@@ -262,6 +262,7 @@ strong {
 }
 .end_main {
   margin-top: 1em;
+  margin-bottom: 2em;
   font-weight: 700;
   font-size: 1.2em;
   color: black;
@@ -296,7 +297,7 @@ aside {
 .sidecard {
   background-color: white;
   display: flex;
-  margin: 1em;
+  margin: 0.8em;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -311,13 +312,14 @@ aside {
   height: 8.5rem;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  padding: 0.2em 1.4em 0.2em 0.2em;
+  padding: 0.2em 1.5em 0.2em 0.2em;
   object-fit: cover;
 }
 .sidecard-text {
   display: flex;
   flex-direction: column;
   margin-top: 1.2em;
+  margin-right: 0.3em;
 }
 .sidecard-text h4 {
   font-weight: 700;
@@ -338,10 +340,10 @@ aside {
   margin: auto;
 }
 .activity-title {
-  padding-left: 2em;
+  padding-left: 1.8em;
   margin-bottom: 3rem;
   margin-top: 4rem;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 700;
 }
 .activity-cards h3 {
